@@ -16,7 +16,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = (
-    'flat',
+    'material',
+    'material.admin',
 
     'django.contrib.admin',
     'django.contrib.auth',
@@ -27,6 +28,11 @@ INSTALLED_APPS = (
 
     'rest_framework',
     'rest_framework_docs',
+
+    'project.pages',
+    'project.quotes',
+    'project.images',
+    'project.common'
 )
 
 MIDDLEWARE_CLASSES = (
@@ -166,3 +172,7 @@ STATICFILES_DIRS = (
 )
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+ADMIN_RESUMABLE_SHOW_THUMB = True
+ADMIN_RESUMABLE_SUBDIR = 'uploads'
+MEDIA_URL = '/'

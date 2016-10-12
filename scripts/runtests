@@ -14,3 +14,5 @@ export STATICFILES_STORAGE=django.contrib.staticfiles.storage.ManifestStaticFile
 flake8 project --ignore=E128,E501 --exclude=migrations,settings,wsgi.py
 coverage run --source=project --omit='*/wsgi.py,*/settings.py,*/migrations/*.py,*__init__.py' manage.py test $@
 coverage report
+
+npm test
