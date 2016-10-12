@@ -1,1 +1,1 @@
-web: PYTHONUNBUFFERED=trueenv/bin/python manage.py runserver 0.0.0.0:$PORT
+web: PYTHONUNBUFFERED=true env/bin/python manage.py runserver 0.0.0.0:$PORT
