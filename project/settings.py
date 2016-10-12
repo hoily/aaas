@@ -172,3 +172,7 @@ STATICFILES_DIRS = (
 )
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+ADMIN_RESUMABLE_SHOW_THUMB = True
+ADMIN_RESUMABLE_SUBDIR = 'uploads'
+MEDIA_URL = '/'
