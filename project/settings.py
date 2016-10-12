@@ -27,6 +27,11 @@ INSTALLED_APPS = (
 
     'rest_framework',
     'rest_framework_docs',
+
+    'project.pages',
+    'project.quotes',
+    'project.images',
+    'project.common'
 )
 
 MIDDLEWARE_CLASSES = (
