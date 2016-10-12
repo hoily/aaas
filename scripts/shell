@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+set -e
+export PATH=env/bin:${PATH}
+
+honcho --app-root etc/environments/development --env env run python manage.py shell

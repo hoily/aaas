@@ -12,11 +12,11 @@ machine:
 
 dependencies:
   pre:
-    - ./build
+    - ./scripts/build
   cache_directories:
     - env
     - node_modules
 
 test:
   override:
-    - ./runtests
+    - ./scripts/runtests

@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+set -e
+
+export PATH=env/bin:${PATH}
+export DATABASE_URL=postgres://localhost/aaas
+export DEBUG=true
+export IN_TEST=true
+export SECRET_KEY='secrit'
+export DJANGO_SETTINGS_MODULE=project.settings
+export EMAIL_BACKEND=django.core.mail.backends.console.EmailBackend
+export STATICFILES_STORAGE=django.contrib.staticfiles.storage.ManifestStaticFilesStorage
+
+flake8 project --ignore=E128,E501 --exclude=migrations,settings,wsgi.py
+coverage run --source=project --omit='*/wsgi.py,*/settings.py,*/migrations/*.py,*__init__.py' manage.py test $@
+coverage report
