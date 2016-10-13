@@ -1,5 +1,5 @@
 # aaas
-Ainsley As A Service. It's [placekittens](https://placekiteens.com) but for Ainsley Harriot
+Ainsley As A Service. It's [placekittens](https://placekiteens.com), but for Ainsley Harriot
 
 ## Development
 If you want to contribute to AaaS, or self host the project, follow these steps
@@ -14,7 +14,11 @@ To setup the the project locally run the following commands:
 
     ./scripts/build
 
-This command setup the virtual environment, get the required models, and create the database
+This command setup the virtual environment and gets the required modules
+
+    createdb aaas
+
+This creates the PostgreSQL database for use with the project
 
     ./scripts/migrate
 

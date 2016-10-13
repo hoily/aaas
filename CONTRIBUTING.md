@@ -2,9 +2,7 @@
 
 We welcome pull requests from anyone.
 
-Fork, then clone the repo:
-
-    git clone git@github.com:your-username/aaas.git
+Fork and clone the repo.
 
 See the [README](README.md) for an installation guide for Development
 
